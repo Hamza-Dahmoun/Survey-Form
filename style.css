@@ -26,7 +26,8 @@ body{
     text-align: center;
   }
   form{
-    margin-right:auto;width:60%;margin-left: auto;/*to center the form horizentally inside its parent (no need to display:block because it is by default)*/
+    margin-right:auto;width:60%;margin-left: auto;/*to center the form horizentally inside its parent (no need to display:block because it is by default)*/    
+    margin-top:5%;
     padding: 3%;
     background-color: var(--main-background-color-white);
     border:1px solid var(--secondary-border-color-light-gray);
