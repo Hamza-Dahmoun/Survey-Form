@@ -8,7 +8,7 @@
     --fields-height: 35px;
 }
 body{
-    background-color: var(--main-background-color-grayish-white)/*#A9D7D1*/;
+    background-color: var(--main-background-color-white)/*#A9D7D1*/;
     font-family:var(--font-family);
     color: var(--main-font-color-dark-gray);
     padding: 5%;
@@ -30,6 +30,7 @@ body{
     padding: 3%;
     background-color: var(--main-background-color-white);
     border:1px solid var(--secondary-border-color-light-gray);
+    box-shadow: 0px 0px 10px 5px var(--secondary-border-color-light-gray);
   }
   form *{/*selecting all direct children of the form*/
     margin-top: 10px;margin-bottom: 10px;
