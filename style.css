@@ -33,6 +33,7 @@ body{
     margin-left: 2%;/*make a space between labels and inputs*/
     width:30%;
     height:25px;
+    border:1px solid var(--secondary-border-color-light-gray);
   }    
   textarea{
     height: 30%;
@@ -40,8 +41,7 @@ body{
     width:30%;
   }
   .entries:focus{/*behaviours when the entry is being focused*/
-    border: 2px solid #59ACE0;
-    border-radius: 2px;
+    border: 1px solid #efefef;
   }
   textarea:focus{/*behaviours when the textarea is being focused*/
     border: 2px solid #59ACE0;
