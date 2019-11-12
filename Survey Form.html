@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <style>
+    body{
+      background-color:#A9D7D1;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    h1,p{
+      text-align: center;
+    }
+    form{
+      margin-right:auto;width:60%;margin-left: auto;/*to center the form horizentally inside its parent (no need to display:block because it is by default)*/
+      padding: 3%;
+      background-color: #fafafa;
+      border-radius: 5px;
+    }
+    form *{/*selecting all direct children of the form*/
+      margin-top: 10px;margin-bottom: 10px;
+    }
+    label{/*this will make the label take 50% of the row and its text will be aligned to the right, and we have to change its default display (inline) because the default value (inline) will make the browser ignore width-marginleft-marginright*/
+      width:50%;margin-left:0%;margin-right:0%;text-align:right;
+      display:inline-block;/*we changed it from inline (default value) to inline-block so that the browser will consider the values of the above properties... if we made it 'block' it will occupy the whole row which doesn't make sense in here*/
+    }
+    .entries{
+      margin-left: 2%;/*make a space between labels and inputs*/
+      width:30%;
+      height:25px;
+    }    
+    textarea{
+      height: 30%;
+      margin-left: 2%;/*make a space between labels and inputs*/
+      width:30%;
+    }
+    .entries:focus{/*behaviours when the entry is being focused*/
+      border: 2px solid #59ACE0;
+      border-radius: 2px;
+    }
+    textarea:focus{/*behaviours when the textarea is being focused*/
+      border: 2px solid #59ACE0;
+      border-radius: 2px;
+    }
+    #submit{
+      background-color: #59ACE0;
+      color:#fff;
+      border-radius: 3px;
+      display:block;margin-left: auto;margin-right:auto;width:25%;/*this is to make the button take the whole row (display block) and then get horizentally centred*/
+      height: 29px; 
+    }
+
+  </style>
+  <body>
+      <h1 id="title">Survey Form</h1>
+        
+    <form id="survey-form">
+      <p id="description">Let us know how we can improve FreeCodeCamp</p>
+      <label id="name-label" for="name">* Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" class="entries" required/>
+      <label id="email-label" for="email">* Email:</label>
+      <input type="email" id="email" placeholder="Enter your email"  class="entries" required/>
+      <label id="number-label" for="number">* Age:</label>
+      <input type="number" id="number" placeholder="Age"  min="1" max="100" class="entries"/>
+      <label>* Which option best describes your current role?</label>
+      <select id="dropdown"  class="entries">
+        <option value="" disabled selected>Select your option</option>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+      </select>
+      <br/>
+      <label for="recomend">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+      <div class="entries" style="display:inline-block">
+          <input type="radio" name="recomend" value="sure"/>Definitely<br/>
+          <input type="radio" name="recomend" value="maybe"/>Maybe<br/>
+        <input type="radio" name="recomend" value="notsure"/>Not sure<br/>
+      </div>
+      
+      <label for="prefered">What do you like most in FCC:</label>
+      <select class="entries">
+        <option value="" selected disabled>Select an option</option>
+        <option name="prevered" value="challenges">Challenges</option>
+        <option name="prevered" value="projects">Projects</option>
+        <option name="prevered" value="community">Community</option>
+        <option name="prevered" value="opensource">Open Source</option>
+      </select>
+      <label>Things that should be improved in the future
+(Check all that apply):</label>
+      <div class="entries" style="display:inline-block">
+        <input type="checkbox" name="suggestions" value="front"/>Front-end Projects<br/><input type="checkbox" name="suggestions" value="backend"/>Back-end Projects<br/><input type="checkbox" name="suggestions" value="visualization"/>Data Visualization<br/><input type="checkbox" name="suggestions" value="challenges"/>Challenges<br/><input type="checkbox" name="suggestions" value="opensource"/>Open Source Community<br/><input type="checkbox" name="suggestions" value="git"/>Gitter help rooms<br/><input type="checkbox" name="suggestions" value="video"/>Videos<br/><input type="checkbox" name="suggestions" value="meetups"/>City Meetups<br/><input type="checkbox" name="suggestions" value="wiki"/>Wiki<br/><input type="checkbox" name="suggestions" value="forum"/>Forum<br/><input type="checkbox" name="suggestions" value="additionalcourses"/>Additional Courses
+      </div>
+      <label for="comment" >Any Comments or Suggestions?</label>
+      <textarea id="comment" rows="5" columns="100" placeholder="Enter your comment here ..."></textarea>
+<input type="submit" id="submit" value="submit"/>
+    </form>
+    
+  </body>
+</html>
