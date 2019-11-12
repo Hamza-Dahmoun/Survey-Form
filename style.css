@@ -1,9 +1,10 @@
 :root{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --main-background-color-grayish-white: #fbfcfc;
 }
 body{
     background-color: var(--main-background-color-grayish-white)/*#A9D7D1*/;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:var(--font-family);
   }
   #title{
       font-size: 50px;
