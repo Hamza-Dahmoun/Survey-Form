@@ -11,6 +11,7 @@ body{
     background-color: var(--main-background-color-grayish-white)/*#A9D7D1*/;
     font-family:var(--font-family);
     color: var(--main-font-color-dark-gray);
+    padding: 5%;
   }
   #title{
       font-size: 50px;
