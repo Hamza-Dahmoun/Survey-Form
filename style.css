@@ -1,9 +1,11 @@
 :root{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --main-background-color-grayish-white: #fbfcfc;
+    --dominant-color-red: #CC1632;
     --main-font-color-dark-gray: #555;
     --main-background-color-white: #fff;
     --secondary-border-color-light-gray: #f6f6f6;
+    --fields-height: 35px;
 }
 body{
     background-color: var(--main-background-color-grayish-white)/*#A9D7D1*/;
@@ -32,7 +34,7 @@ body{
   .entries{
     margin-left: 2%;/*make a space between labels and inputs*/
     width:30%;
-    height:25px;
+    height:var(--fields-height);
     border:1px solid var(--secondary-border-color-light-gray);
   }    
   textarea{
@@ -48,9 +50,13 @@ body{
     border-radius: 2px;
   }
   #submit{
-    background-color: #59ACE0;
-    color:#fff;
-    border-radius: 3px;
+    background-color: var(--dominant-color-red);
+    color:var(--main-background-color-white);
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border: 1px solid var(--dominant-color-red);
     display:block;margin-left: auto;margin-right:auto;width:25%;/*this is to make the button take the whole row (display block) and then get horizentally centred*/
-    height: 29px; 
+    height: var(--fields-height); 
+    font-size:18px;
+    margin-top:5%;
   }
