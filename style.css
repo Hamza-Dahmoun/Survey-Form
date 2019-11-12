@@ -3,6 +3,7 @@
     --main-background-color-grayish-white: #fbfcfc;
     --main-font-color-dark-gray: #555;
     --main-background-color-white: #fff;
+    --secondary-border-color-light-gray: #f6f6f6;
 }
 body{
     background-color: var(--main-background-color-grayish-white)/*#A9D7D1*/;
@@ -18,8 +19,8 @@ body{
   form{
     margin-right:auto;width:60%;margin-left: auto;/*to center the form horizentally inside its parent (no need to display:block because it is by default)*/
     padding: 3%;
-    background-color: var(--main-background-color-white)/*#fafafa*/;
-    border-radius: 5px;
+    background-color: var(--main-background-color-white);
+    border:1px solid var(--secondary-border-color-light-gray);
   }
   form *{/*selecting all direct children of the form*/
     margin-top: 10px;margin-bottom: 10px;
