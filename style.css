@@ -1,5 +1,6 @@
 :root{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    font-family: 'Nanum Gothic', sans-serif;
     --main-background-color-grayish-white: #fbfcfc;
     --dominant-color-red: #CC1632;
     --main-font-color-dark-gray: #555;
