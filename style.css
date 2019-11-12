@@ -60,3 +60,8 @@ body{
     font-size:18px;
     margin-top:5%;
   }
+  #submit:hover{
+      background-color: var(--main-background-color-white);
+      color: var(--dominant-color-red);
+      transition-duration: 0.5s;
+  }
