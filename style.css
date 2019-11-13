@@ -60,6 +60,9 @@ form * {
     #title {
         font-size: 43px;
     }
+    #description {
+        font-size: 25px;
+    }
     form {
         width: 80%;
     }
@@ -69,6 +72,9 @@ form * {
     #title {
         font-size: 38px;
     }
+    #description {
+        font-size: 23px;
+    }
     form {
         width: 90%;
     }
@@ -77,6 +83,9 @@ form * {
 @media screen and (max-width: 300px) {
     #title {
         font-size: 33px;
+    }    
+    #description {
+        font-size: 20px;
     }
     form {
         width: 100%;
@@ -86,6 +95,9 @@ form * {
 @media screen and (max-width: 230px) {
     #title {
         font-size: 28px;
+    }
+    #description {
+        font-size: 18px;
     }
     form {
         width: 100%;
