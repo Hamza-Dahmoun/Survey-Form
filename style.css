@@ -36,7 +36,9 @@ body{
   }
   form *{/*selecting all direct children of the form*/
     margin-top: 10px;margin-bottom: 10px;
+    font-size:18px;
   }
+  
   label{/*this will make the label take 50% of the row and its text will be aligned to the right, and we have to change its default display (inline) because the default value (inline) will make the browser ignore width-marginleft-marginright*/
     width:50%;margin-left:0%;margin-right:0%;text-align:right;
     display:inline-block;/*we changed it from inline (default value) to inline-block so that the browser will consider the values of the above properties... if we made it 'block' it will occupy the whole row which doesn't make sense in here*/
