@@ -210,11 +210,23 @@ textarea:focus {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: auto;
+    padding-left: 20px; padding-right:20px;
     /*this is to make the button take the whole row (display block) and then get horizentally centred*/
     height: var(--fields-height);
     font-size: 18px;
     margin-top: 5%;
+}
+
+@media screen and (max-width: 400px){
+    #submit{
+        font-size:16px;
+    }
+}
+@media screen and (max-width: 250px){    
+    #submit{
+        font-size:14px;
+    }
 }
 
 #submit:hover {
