@@ -54,6 +54,11 @@ form * {
     font-size: 18px;
 }
 
+input[type="radio"], input[type="checkbox"]{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
 @media screen and (max-width: 1000px) {
     #title {
         font-size: 43px;
