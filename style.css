@@ -1,4 +1,4 @@
-:root{
+:root {
     /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
     font-family: 'Nanum Gothic', sans-serif;
     --main-background-color-grayish-white: #fbfcfc;
@@ -8,110 +8,148 @@
     --secondary-border-color-light-gray: #f6f6f6;
     --fields-height: 35px;
 }
-html, body{
+
+html, body {
     margin: 0%;
-    padding:0%;
+    padding: 0%;
 }
-body{
-    background-color: red /*var(--main-background-color-white)*/;
-    font-family:var(--font-family);
+
+body {
+    background-color: var(--dominant-color-red)/*var(--main-background-color-white)*/
+    ;
+    font-family: var(--font-family);
     color: var(--main-font-color-dark-gray);
-  }
-  #title{
-      font-size: 50px;
-  }
-  #description{
-      color:var(--dominant-color-red);
-      font-size:28px;
-      word-spacing: 4px;
-      margin-bottom:5%;      
-  }
-  h1,p{
+}
+
+#title {
+    color:var(--main-background-color-white);
+    font-size: 50px;
+}
+
+#description {
+    color: var(--dominant-color-red);
+    font-size: 28px;
+    word-spacing: 4px;
+    margin-bottom: 5%;
+}
+
+h1, p {
     text-align: center;
-  }
-  form{
-    margin-right:auto;width:60%;margin-left: auto;/*to center the form horizentally inside its parent (no need to display:block because it is by default)*/    
-    margin-top:5%;
+}
+
+form {
+    margin-right: auto;
+    width: 60%;
+    margin-left: auto;
+    /*to center the form horizentally inside its parent (no need to display:block because it is by default)*/
+    margin-top: 5%;
     padding: 3%;
     background-color: var(--main-background-color-white);
-    border:1px solid var(--secondary-border-color-light-gray);
+    border: 1px solid var(--secondary-border-color-light-gray);
     box-shadow: 0px 0px 10px 5px var(--secondary-border-color-light-gray);
-  }
-  form *{/*selecting all direct children of the form*/
-    margin-top: 10px;margin-bottom: 10px;
-    font-size:18px;
-  }
-  @media screen and (max-width: 600px){
-  #title{
-    font-size: 43px;
 }
-      form{
-          width:80%;
-      }
-  }
-  @media screen and (max-width: 400px){     
-  #title{
-    font-size: 38px;
+
+form * {
+    /*selecting all direct children of the form*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
-    form{
-        width:90%;
+
+@media screen and (max-width: 600px) {
+    #title {
+        font-size: 43px;
+    }
+    form {
+        width: 80%;
     }
 }
-@media screen and (max-width: 300px){
-    #title{
+
+@media screen and (max-width: 400px) {
+    #title {
+        font-size: 38px;
+    }
+    form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #title {
         font-size: 33px;
     }
-  form{
-      width:100%;
-  }
+    form {
+        width: 100%;
+    }
 }
-@media screen and (max-width: 230px){
-    #title{
+
+@media screen and (max-width: 230px) {
+    #title {
         font-size: 28px;
     }
-  form{
-      width:100%;margin-left: 0%;margin-right: 0%;     
-      box-shadow: none;
-    border:none;
-  }
+    form {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        box-shadow: none;
+        border: none;
+    }
 }
 
+label {
+    /*this will make the label take 50% of the row and its text will be aligned to the right, and we have to change its default display (inline) because the default value (inline) will make the browser ignore width-marginleft-marginright*/
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: right;
+    display: inline-block;
+    /*we changed it from inline (default value) to inline-block so that the browser will consider the values of the above properties... if we made it 'block' it will occupy the whole row which doesn't make sense in here*/
+}
 
-  label{/*this will make the label take 50% of the row and its text will be aligned to the right, and we have to change its default display (inline) because the default value (inline) will make the browser ignore width-marginleft-marginright*/
-    width:50%;margin-left:0%;margin-right:0%;text-align:right;
-    display:inline-block;/*we changed it from inline (default value) to inline-block so that the browser will consider the values of the above properties... if we made it 'block' it will occupy the whole row which doesn't make sense in here*/
-  }
-  .entries{
-    margin-left: 2%;/*make a space between labels and inputs*/
-    width:30%;
-    height:var(--fields-height);
-    border:1px solid var(--secondary-border-color-light-gray);
-  }    
-  textarea{
+.entries {
+    margin-left: 2%;
+    /*make a space between labels and inputs*/
+    width: 30%;
+    height: var(--fields-height);
+    border: 1px solid var(--secondary-border-color-light-gray);
+}
+
+textarea {
     height: 30%;
-    margin-left: 2%;/*make a space between labels and inputs*/
-    width:30%;
-  }
-  .entries:focus{/*behaviours when the entry is being focused*/
+    margin-left: 2%;
+    /*make a space between labels and inputs*/
+    width: 30%;
+}
+
+.entries:focus {
+    /*behaviours when the entry is being focused*/
     border: 1px solid #efefef;
-  }
-  textarea:focus{/*behaviours when the textarea is being focused*/
+}
+
+textarea:focus {
+    /*behaviours when the textarea is being focused*/
     border: 2px solid #59ACE0;
     border-radius: 2px;
-  }
-  #submit{
+}
+
+#submit {
     background-color: var(--dominant-color-red);
-    color:var(--main-background-color-white);
+    color: var(--main-background-color-white);
     transition-duration: 0.5s;
     cursor: pointer;
     border: 1px solid var(--dominant-color-red);
-    display:block;margin-left: auto;margin-right:auto;width:25%;/*this is to make the button take the whole row (display block) and then get horizentally centred*/
-    height: var(--fields-height); 
-    font-size:18px;
-    margin-top:5%;
-  }
-  #submit:hover{
-      background-color: var(--main-background-color-white);
-      color: var(--dominant-color-red);
-      transition-duration: 0.5s;
-  }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    /*this is to make the button take the whole row (display block) and then get horizentally centred*/
+    height: var(--fields-height);
+    font-size: 18px;
+    margin-top: 5%;
+}
+
+#submit:hover {
+    background-color: var(--main-background-color-white);
+    color: var(--dominant-color-red);
+    transition-duration: 0.5s;
+}
