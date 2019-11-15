@@ -154,6 +154,7 @@ input[type="radio"], input[type="checkbox"]{
         text-align:left;
         margin-top:5%;
         margin-bottom:0.5%;
+        color:var(--dominant-color-red);
     }
     
     .entries {
